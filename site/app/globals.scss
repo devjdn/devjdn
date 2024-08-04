@@ -10,7 +10,7 @@
 
 :root {
   //------BACKGROUNDS------//
-  --primary: #fff;
+  --primary: #ffe9ce;
   --secondary: #ff711e;
 
   //------TEXT------//
@@ -20,13 +20,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    //------BACKGROUND------//
-    --primary: #000;
-    --secondary: #ff711e;
+    // //------BACKGROUND------//
+    // --primary: #6f4e37;
+    // --secondary: #ff711e;
   
-    //------TEXT------//
-    --primary-text: #ff711e;
-    --secondary-text: #000;
+    // //------TEXT------//
+    // --primary-text: #ff711e;
+    // --secondary-text: #000;
     }
 }
 
@@ -55,8 +55,19 @@ h4{
 }
 
 //------HEADER------//
-header.global-header{
+header{
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--primary);
+
+  .header-row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .logo{
     display: flex;
@@ -74,10 +85,21 @@ header.global-header{
       background: var(--primary-text);
     }
   }
+
+  svg{
+    stroke: var(--primary-text);
+  }
 }
 
 //------NAV------//
 nav.global-nav{
+  &[aria-expanded="false"] {
+    display: none;
+  }
+  &[aria-expanded="true"] {
+    display: block;
+  }
+
   ul.global-nav-list{
 
     li.nav-list-item{
