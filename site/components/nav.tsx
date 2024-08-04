@@ -2,10 +2,10 @@ import Link from "next/link";
 
 interface NavProps {
     isOpen: boolean;
-    toggleMenu: () => void;
+    // toggleMenu: () => void;
 }
 
-export default function Nav({isOpen, toggleMenu}: NavProps) {
+export default function Nav({isOpen}: NavProps) {
 
     const links = [
         { name: 'About', href: '/about' },
@@ -22,7 +22,7 @@ export default function Nav({isOpen, toggleMenu}: NavProps) {
             <ul className="global-nav-list">
                 {links.map((link) => (
                     <li className="nav-list-item" key={link.name}>
-                        <Link href={link.href}><h2>{link.name}</h2></Link>
+                        <Link href={link.href}>{link.name}</Link>
                     </li>
                 ))}
             </ul>
