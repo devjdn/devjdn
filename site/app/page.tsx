@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SPACEViewer from "@/public/spaceviewer-preview.png"
+import SkillsList from "@/components/skills-list";
 
 
 export default function Home() {
@@ -21,6 +22,13 @@ export default function Home() {
         Read about my interests in a little more detail by clicking here
         </a>
       </section>
+      <section className="skills">
+        <div className="section-text">
+          <h2>My skills</h2>
+          <p>In my relatively short time learning web development, I have taught myself how to use a series of web technologies through the use of tutorials, forums, documentation, and also the use of ChatGPT, which gives a lot more straight forward answers than Google!</p>
+        </div>
+        <SkillsList/>
+      </section>
       <section className="projects">
         <div className="section-text">
           <h2>Quick look at my projects</h2>
@@ -28,16 +36,7 @@ export default function Home() {
         </div>
         <div className="project-snippets">
           <div className="project-img-container">
-            <Image fill={true} objectFit="cover" src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
-          </div>
-          <div className="project-img-container">
-            <Image fill={true} objectFit="cover" src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
-          </div>
-          <div className="project-img-container">
-            <Image fill={true} objectFit="cover" src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
-          </div>
-          <div className="project-img-container">
-            <Image fill={true} objectFit="cover" src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
+            <Image fill={true} src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
           </div>
         </div>
         <a href="/projects" className="page-link">
