@@ -1,5 +1,6 @@
 import Image from "next/image";
-import SPACEViewer from "@/public/spaceviewer-preview.png"
+import APODViewerNext from "@/public/apodviewernext.png";
+import APODViewer from "@/public/apodviewer.png"
 import SkillsList from "@/components/skills-list";
 
 
@@ -36,7 +37,10 @@ export default function Home() {
         </div>
         <div className="project-snippets">
           <div className="project-img-container">
-            <Image fill={true} src={SPACEViewer} alt="A preview image of my SPACEViewer website, which you can visit at spaceviewer.vercel.app."/>
+            <Image fill={true} src={APODViewerNext} alt="A preview image of my APODViewer-Next.JS website, which you can visit at apodviewer-next-js.vercel.app."/>
+          </div>
+          <div className="project-img-container">
+            <Image fill={true} src={APODViewer} alt="A preview image of my APODViewer website, which you can visit at apodviewer.vercel.app."/>
           </div>
         </div>
         <a href="/projects" className="page-link">

@@ -211,7 +211,11 @@ section.projects{
     .project-img-container{
       position: relative;
       width: 100%;
-      aspect-ratio: 14/10; 
+      aspect-ratio: 14/10;
+
+      img{
+        object-fit: contain; 
+      }
     }
   }
 }
