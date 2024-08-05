@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
             </a>
     
-            <button className="nav-opener" onClick={toggleMenu}>
+            <button className="nav-opener" name="global nav button" onClick={toggleMenu}>
                 {!isOpen ? (
                     <CircleEqual size={28} strokeWidth={1.5}/>
                 ) : (

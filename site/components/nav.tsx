@@ -10,7 +10,6 @@ export default function Nav({isOpen}: NavProps) {
     const links = [
         { name: 'About', href: '/about' },
         { name: 'Projects', href: '/projects' },
-        { name: 'Hobbies', href: '/hobbies' },
         { name: 'Github', href: 'https://github.com/devjdn' },
         { name: 'X', href: 'https://twitter.com/jdnquery' },
         { name: 'Instagram', href: 'https://instagram.com/jaydenpriestley1' },

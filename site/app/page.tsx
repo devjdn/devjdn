@@ -5,7 +5,7 @@ import SkillsList from "@/components/skills-list";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <section className="intro">
         <div className="section text">
           <h1>Hey! I&apos;m Jayden.</h1>
@@ -43,6 +43,6 @@ export default function Home() {
         View my projects and all relative information about them by clicking here
         </a>
       </section>
-    </main>
+    </>
   );
 }
