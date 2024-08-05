@@ -12,14 +12,14 @@
   //------BACKGROUNDS------//
   --primary: #fff;
   --secondary: #f4f4f4;
-  --tertiary: #ff711e;
+  --tertiary: #ff4000;
   --primary-opposite: #000;
 
   //------SPECIFIC BACKGROUNDS------//
   --translucent: #ffffffea;
 
   //------TEXT------//
-  --primary-text: #ff711e;
+  --primary-text: #ff4000;
   --secondary-text: #000;
   --tertiary-text: #fff;
   --primary-opposite-text: #acacac;
@@ -88,6 +88,11 @@ a{
 
   &:hover{
     text-decoration: 1px underline var(--links);
+  }
+}
+a{
+  h3{
+    color: unset;
   }
 }
 header{
@@ -212,10 +217,52 @@ section.projects{
 }
 
 section.project-repository{
-  ul{
+  li{
+    margin: 1em 0;
+  }
+
+  ul.language-list{
+    padding-inline-start: 20px;
     li{
-      margin: 1em 0;
+      list-style-type: decimal;
+
+      &::marker{
+        color: var(--primary-text);
+      }
     }
+  }
+}
+
+section.repo-search{
+  .search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: var(--primary-border);
+    width: fit-content;
+    padding: 10px 20px;
+
+    input{
+      color: var(--secondary-text);
+      background: transparent;
+
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    svg{
+      stroke: var(--primary-text);
+    }
+  }
+}
+
+section.socials{
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 }
 
