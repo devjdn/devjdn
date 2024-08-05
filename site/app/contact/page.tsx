@@ -22,8 +22,8 @@ export default function Contact() {
             </div>
             <div className="social-accounts">
                 <ul className="account-list">
-                    {socials.map((social) => (
-                        <li className="social-list-item">
+                    {socials.map((social, socialIndex) => (
+                        <li key={socialIndex} className="social-list-item">
                             <Link href={social.href}>
                                 <h3>{social.name}</h3>
                             </Link>
